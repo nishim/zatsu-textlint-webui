@@ -1,0 +1,17 @@
+<meta charset='utf8'>
+<section>
+  <input type='text' name='url' id='url' style='width:40em;' placeholder='lint対象のURLを入力'>
+  <button type='button' id='lint'>lint</button>
+</section>
+<section>
+  <pre id='linted'></pre>
+</section>
+<script>
+document.getElementById('lint').addEventListener('click', () => {
+  fetch('/lint/?url=' + encodeURIComponent(document.getElementById('url').value)).then((r) => {
+    return r.text();
+  }).then((t) => {
+    document.getElementById('linted').textContent = t;
+  });
+});
+</script>

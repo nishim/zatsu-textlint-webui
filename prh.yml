@@ -1,0 +1,19 @@
+version: 1
+
+rules:
+  - expected: 問合せ
+    pattern:
+      - 問い合わせ
+      - 問い合せ
+  - expected: いただい
+    pattern:
+      - 頂い
+  - expected: いただき
+    pattern:
+      - 頂き
+  - expected: いただく
+    pattern:
+      - 頂く
+  - expected: いただけ
+    pattern:
+      - 頂け

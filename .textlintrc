@@ -1,0 +1,13 @@
+{
+  "filters": {},
+  "rules": {
+    "prh": {
+      "rulePaths": [
+        "./prh.yml"
+      ]
+    }
+  },
+  "plugins": [
+    "html"
+  ]
+}
