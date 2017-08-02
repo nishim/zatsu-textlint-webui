@@ -1,0 +1,26 @@
+{
+  "name": "textlint-demo",
+  "version": "1.0.0",
+  "description": "` npm install textlint -g npm install textlint-rule-prh -g npm install textlint-plugin-html -g `",
+  "main": "index.js",
+  "dependencies": {
+    "textlint": "^8.2.1",
+    "textlint-plugin-html": "^0.1.5",
+    "textlint-rule-prh": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "textlint": "textlint --stdin || true",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishim/zatsu-textlint-webui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nishim/zatsu-textlint-webui/issues"
+  },
+  "homepage": "https://github.com/nishim/zatsu-textlint-webui#readme"
+}

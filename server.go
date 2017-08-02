@@ -44,7 +44,7 @@ func main() {
 			log.Fatal(err)
 		}
 
-		cmd := exec.Command("textlint", "--stdin")
+		cmd := exec.Command("npm", "run", "--silent", "textlint")
 		stdin, err := cmd.StdinPipe()
 		if err != nil {
 			log.Fatal(err)
